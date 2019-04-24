@@ -8,11 +8,11 @@
 
 
 
-    <!-- <script type="text/javascript">
-      // function tree(){
-      //  alert ("Do you want to add the tree");
+          <script type="text/javascript">
+          function tree(){
+          alert ("Do you want to add the tree");
        }
-     </script>-->
+         </script>
     </head> 
     <body>  
 
@@ -20,9 +20,9 @@
   <div class="container-fluid">
     <nav class="navbar navbar-default ">
       <ul class="nav nav-pills justify-content-end">
-        <li><a href="#add">Add Tree Species</a></li>
-        <li><a href="#"> Update Tree Species</a></li>
-        <li><a href="viewall.php">View All Tree Species</a></li>
+        <li><a class="btn btn-primary nav-btn" href="#add">Add Tree Species</a></li>&nbsp
+        <li><a class="btn btn-primary nav-btn" href="#"> Update Tree Species</a></li>&nbsp
+        <li><a class="btn btn-primary nav-btn" href="viewall.php">View All Tree Species</a></li>
       </ul>
     </nav>
   </div>
@@ -84,13 +84,13 @@
        </div>
         <div class="form-group">
            <label for="image">Tree Image</label><br>
-           <input type="file" name="image" value="" required>
+           <input type="file" name="image" value="" >
        </div>
         <div class="form-group">
            <label for="htp">How To Plant</label><br>
           <textarea placeholder="enter how to plant here" class="form-control" cols="10" rows="2" name="htp" required></textarea>
        </div>
-       <button class="btn btn-primary form-btn">Add Tree</button>
+       <button class="btn btn-primary form-btn" onclick="tree()">Add Tree</button>
           </fieldset>
      </form> 
       </div>
@@ -98,4 +98,4 @@
        <script src="https://code.jquery.com/jquery.js"></script>          
       <script src="js/bootstrap.min.js"></script>   
        </body>
-       </html> 
+       </html>  
